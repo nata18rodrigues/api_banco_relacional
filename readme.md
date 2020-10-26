@@ -2,14 +2,14 @@
 
 ## Desafio
 
-[] criar usuários
-[] listar todos usuários cadastrados
-[] listar apenas um usuário cadastrado (parametro id)
-[] alterar um usuário
-[] deletar um usuário
+[ok] criar usuários 
+[ok] listar todos usuários cadastrados
+[ok] listar apenas um usuário cadastrado (parametro id)
+[ok] alterar um usuário
+[ok] deletar um usuário
 
-[] criar uma tabela de produtos
-[] listar todos produtos cadastrados
+[ok] criar uma tabela de produtos
+[ok] listar todos produtos cadastrados
 [] listar apenas um produto cadastrado (parametro id)
 [] alterar um produto
 [] deletar um produto
