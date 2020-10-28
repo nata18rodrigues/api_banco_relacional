@@ -13,8 +13,19 @@
     "nodemon": "^2.0.6",
     "pg": "^7.18.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.21.4",
+    "sequelize": "^5.22.3",
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^4.2.0"
-  }
+  },
+  "description": "[ok] criar usuários \r [ok] listar todos usuários cadastrados\r [ok] listar apenas um usuário cadastrado (parametro id)\r [ok] alterar um usuário\r [ok] deletar um usuário",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nata18rodrigues/database.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/nata18rodrigues/database/issues"
+  },
+  "homepage": "https://github.com/nata18rodrigues/database#readme",
+  "devDependencies": {}
 }
