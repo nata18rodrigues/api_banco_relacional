@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) =>
-    queryInterface.createTable("produtos", {
+    queryInterface.createTable("techs", {
       id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
@@ -12,11 +12,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      preco: {
-      type: Sequelize.DECIMAL,
-      allowNull: false,
-      },
-      quantidade: Sequelize.INTEGER,
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
@@ -27,5 +22,5 @@ module.exports = {
       },
     }),
 
-  down: async (queryInterface, Sequelize) => queryInterface.dropTable("produtos"),
+  down: async (queryInterface, Sequelize) => queryInterface.dropTable("techs"),
 };

@@ -7,15 +7,30 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
       },
-      username: DataTypes.STRING,
-      password: DataTypes.STRING,
+      email:{
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      password: {
+        type:DataTypes.STRING,
+        allowNull: false,
+      },
+      imgUser:DataTypes.STRING,
     },
     {
       tableName: "users",
     }
   );
 
-  // Users.associate = (models) => {};
+  Users.associate = function(models) {
+    console.log(models);
+    Users.hasMany(models.address, { foreignKey: 'userId', as: 'addresses'});
+    Users.belongsToMany(models.techs, { foreignKey: 'userId', through: 'users_techs', as: 'techs'});
+  };
 
   return Users;
 };
